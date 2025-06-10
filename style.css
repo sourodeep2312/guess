@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    background-image: linear-gradient(to right, rgb(189, 218, 189), rgb(159, 159, 184));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    height: 80vh;
+    overflow: hidden;
+}
+h1 {
+    margin: 50px;
+    display: flex;
+    justify-content: flex-start;
+    white-space: nowrap ;
+
+}
+h3  {
+ display: flex;
+ white-space: inherit;
+ padding: 10px;
+}
+ p { 
+    font-size: 15px;
+    
+ }
+
+.guess {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.guess input[type="number"]::placeholder {
+    color: rgb(252, 0, 0);
+}
+.guess input[type="number"] {
+
+    font-family: cursive;
+    text-align: center;
+    margin: 10px;
+    padding: .25rem;
+    background-color: rgb(214, 235, 167);
+    border: 1px ;
+    border-radius: 15px;
+}
+
+.guess input[type="number"]:hover {
+    background-color: rgb(132, 161, 136);
+    border: 1px red;
+}
+.guess input[type="number"]:focus {
+    outline: none;
+    border: 1px solid  rgb(85, 104, 87)         ;
+}
+
+.guess button {
+    font-family: cursive;
+    margin: 10px;
+    padding: .25rem;
+    background-color: rgb(165, 233, 179);
+    border: 1px ;
+    border-radius: 10px;
+}
+
+.guess button:hover {
+    background-color: rgb(177, 201, 211);
+    box-shadow: 0 4px 8px ;
+}
+.guess button:focus {
+    outline: none;
+    
+}
+.guess button.clicked {
+    background-color: rgb(165, 233, 179);
+    box-shadow: none;
+    
+}
+@media (max-width: 1024px) { h1 {
+    font-size: 28px;
+  }
+
+  main {
+    padding: 1rem;} }
+    
+
+@media (max-width: 768px) 
+{ h1 {
+    font-size: 24px;
+  }
+
+    main {
+    padding: 1rem;} }
+    
+
+@media (max-width: 480px) { h1 {
+    font-size: 20px;
+}
+
+  main {
+    padding: 1rem;}}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Guessing the Number</h1>
+    </header>
+    
+<main>
+    <section class="box">
+        <div class="guess">
+            <h3>
+                Enter a Number 
+            </h3>
+            <input type="number" name="number" id="guessInput" required placeholder="Guess a number from 1-100" autocomplete="off">
+            <button id="submitGuess">Submit Guess</button>
+            <p id="feedback"></p>
+            <p id="attempts">Attempts: 0</p>
+            <button id="playAgain" style="display: none;">Play Again</button>
+        </div>
+    </section>
+</main>
+<script src="./index.js"> </script>
+</body>
+
+</html>
