@@ -31,10 +31,10 @@ button.addEventListener("click", ()=> {
         playAgain.style.display= "inline-block"
     }
     else if (userGuess < randomNumber) {
-        feedback.textContent = `📉 Too low! The number was ${ randomNumber}.`;
+        feedback.textContent = `📉 Too low!`;
          }
     else {
-        feedback.textContent = `📈 Too high! The number was ${ randomNumber}.`;
+        feedback.textContent = `📈 Too high!`;
     }
     attempts.textContent = `attempts: ${(numTries)}`;
     input.value = "";
